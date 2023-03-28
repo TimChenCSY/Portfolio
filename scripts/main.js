@@ -10,10 +10,7 @@ document.addEventListener("mousemove", function (event) {
     blob.style.top = y + "px";
 });
 
-
-
 // Set the cursor to be in the center of the blob
-
 document.addEventListener("mousemove", function (event) {
     let x = event.clientX - blob.offsetWidth / 2;
     let y = event.clientY - blob.offsetHeight / 2;
