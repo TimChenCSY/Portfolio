@@ -33,15 +33,3 @@
         transform: translateX(0);
     }
 }
-
-@keyframes fade-in-right {
-    from {
-        opacity: 0;
-
-    }
-
-    to {
-        opacity: 1;
-
-    }
-}
