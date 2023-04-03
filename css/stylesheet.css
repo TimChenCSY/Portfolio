@@ -212,7 +212,7 @@ font-family: 'Satoshi-BlackItalic';
 
 html {
     cursor: none;
-    
+
 
 }
 
@@ -231,15 +231,15 @@ html {
 }
 
 .blob-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  pointer-events: none;
-      background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    pointer-events: none;
+    background-color: rgba(255, 255, 255, 0.5);
 
     mix-blend-mode: difference;
- 
+
 }
 
 
@@ -300,11 +300,42 @@ header {
     color: #1d1915;
     text-decoration: none;
     margin-left: 1.5rem;
+    
 }
 
+
 .nav-link:hover {
-    text-decoration: underline;
+/*    text-decoration: underline;*/
 }
+
+/*Navlink animation from*/
+/*https://www.30secondsofcode.org/css/s/hover-underline-animation/*/
+
+.navlink-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.navlink-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.1em;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navlink-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/**/
+
 
 /* body */
 body {
@@ -357,6 +388,7 @@ body {
     height: 100%;
     overflow-x: hidden;
     border-bottom: 0.13em solid #1d1915;
+
 }
 
 right-column,
@@ -370,13 +402,18 @@ right-column,
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.13em solid #1d1915;
+    transition-duration: 0.5s;
+
 
 }
+
 .cases:hover {
-    background-color:black;
-    color:white;
+    background-color: black;
+    color: white;
     background-blend-mode: difference;
-    
+    padding: 1em;
+    transition-duration: 0.2s;
+
 }
 
 
@@ -407,8 +444,8 @@ right-column,
 
 .left-column-content {
     position: relative;
-    top: 5vh;
-    left: 0;
+    margin-top: 5vh;
+
 }
 
 .right-column-content {
@@ -473,6 +510,7 @@ footer {
 }
 
 .scroll-wrap:hover {
+
     animation-play-state: paused;
 }
 
@@ -484,6 +522,7 @@ footer {
     font-family: 'Satoshi-BlackItalic';
 
 
+
 }
 
 .scroll span:hover {
@@ -492,30 +531,11 @@ footer {
 
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
 
-    100% {
-        transform: translateX(-33.3%);
-    }
-}
-
-
-@keyframes rainbow {
-    0% {
-        background-position: 0 0;
-    }
-
-    100% {
-        background-position: -400% 0;
-    }
-}
 
 .footer-bottom {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
 
@@ -526,9 +546,7 @@ footer {
 
 }
 
-.footer-info {
-    flex-direction: column;
-}
+.footer-info {}
 
 .footer-info span {
     margin-bottom: 1em;
@@ -539,6 +557,7 @@ footer {
     color: #eee8cd;
     text-decoration: underline;
     font-family: 'Satoshi-Medium';
+    margin-right: 0.5em;
 }
 
 .jump-link:hover {
@@ -571,5 +590,13 @@ h2 {
 }
 
 .left-column-contact {
-    
+    align-self: baseline;
+    position: relative;
+    margin: 1em;
+    margin-top: auto;
+    margin-right: auto;
+}
+
+.left-column-description {
+    font-size: 1.2em;
 }
