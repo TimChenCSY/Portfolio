@@ -441,7 +441,22 @@ right-column,
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     background-color: white;
-    color:black;
+    color: black;
+}
+
+.aboutcases {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.13em solid #1d1915;
+    transition-duration: 0.5s;
+    opacity: 0;
+    animation: fadeInRight ease-in 0.4s 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: white;
+    color: black;
+    
 }
 
 .cases:hover {
@@ -450,6 +465,19 @@ right-column,
     background-blend-mode: difference;
     padding: 1em;
     transition-duration: 0.2s;
+
+}
+
+.aboutcases:hover {
+    background-color: black;
+    color: white;
+    background-blend-mode: difference;
+    padding-top: 1em;
+    padding-bottom: 1em;
+     flex-direction:column;
+    transition-duration: 0.2s;
+   
+  
 
 }
 
@@ -462,13 +490,13 @@ right-column,
     justify-content: center;
     align-items: flex-start;
     padding: 1em;
-    width: 65%;
+    width: 100%;
+    flex-basis: 65%;
     height: 100%;
-
-  
 }
+
 .cases-content:hover a {
-    color:white;
+    color: white;
 }
 
 
@@ -482,12 +510,15 @@ right-column,
     animation-fill-mode: forwards;
 }
 
+
 .cases-right img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     margin-top: 0.25em;
 }
+
+
 
 .left-column-content {
     position: relative;
@@ -690,7 +721,7 @@ h1 {
     text-decoration: underline;
 }
 
-.about-title{
+.about-title {
     font-size: 2em;
 }
 
@@ -708,24 +739,24 @@ h1 {
 }
 
 a {
-    color:black;
+    color: black;
 }
 
 .resume-download {
     width: 100%;
-    height:100%;
+    height: 100%;
     padding: 0.5em;
+
     font-family: "Satoshi-Light";
-    text-decoration:none;
-    font-size: 1.5em;
-    color:white;
-    position:static;  
-    mix-blend-mode:difference;
-      opacity: 0; 
+    text-decoration: none;
+    font-size: 1.7em;
+    color: white;
+    position: static;
+    mix-blend-mode: difference;
+    opacity: 0;
 
     animation: fadeInRight ease 0.4s 0.9s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
- 
-}
 
+}
