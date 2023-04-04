@@ -2,116 +2,381 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Styleguide TimChenPortfolio</title>
-    <script src="scripts/main.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tim Chen</title>
+    <link rel="stylesheet" href="css/satoshi.css">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/animation.css">
 
-
-    <!--To display colored code-->
-    <!--https://medium.com/@freewebtoolkit/how-to-display-code-snippets-in-html-with-color-387acc59f8f5#:~:text=To%20display%20our%20code%20snippets,along%20with%20automatic%20language%20detection.    -->
-    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css”>
-    <script src=”https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js”></script>
-    <script>
-        hljs.highlightAll();
-
-    </script>
-
+    <script src="scripts/main.js"></script>
 
 </head>
 
+
+
 <body>
-    <!--   cursor -->
+
+    <!---->
     <div id="blob"></div>
+
     <header>
 
-        <div class="header-container ">
-            <a class="title">Tim Chen</a>
+        <div class="header-container">
+            <a class="title" href="Landing.html">Tim Chen</a>
             <nav class="navigation ">
                 <a href="about.html" class="nav-link navlink-underline-animation">About</a>
+
             </nav>
         </div>
 
 
     </header>
-    <main class="bodycontent">
-
-        <section class="style-guide-box">
-            <h1 class="title">Style Guide</h1>
-            <p>On working styleguide for My portfolio</p>
-        </section>
-
-        <section id="Ethos" class="style-guide-box">
-            <h2>Ethos</h2>
-            <h3>Example</h3>
-            <div></div>
-
-        </section>
-
-        <section id="Typography" class="style-guide-box">
-            <h2>Typography</h2>
-            <h3>Example</h3>
-            <div>
-                <h1>Title</h1>
-                <h2>Subtitle</h2>
-                <h3>Heading 3</h3>
-                <h4>Heading 4</h4>
-                <h5>Heading 5</h5>
-            </div>
-            <div class="code-example">
-                <p>Code Exmaple</p>
-                <code>
-                    &lt;h1&gt;Title&lt;/h1&gt;<br>
-                    &lt;h2&gt;Subtitle&lt;/h2&gt;<br>
-                    &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
-                    &lt;h4&gt;Heading 4&lt;/h4&gt;<br>
-                    &lt;h5&gt;Heading 5&lt;/h5&gt;<br>
-                </code>
-            </div>
-        </section>
-
-        <section id="Color" class="style-guide-box">
-            <h2>Color</h2>
-            <h3>Example</h3>
-            <div>
 
 
-            </div>
-        </section>
+    <main>
+        <div class="bodycontent">
+            <section class="style-guide-box">
+                <h1 class="title">Style Guide</h1>
 
-        <section id="Interactive Elements" class="style-guide-box">
-            <h2></h2>
-            <h3>Example</h3>
-            <div></div>
-            <div class="code-example">
-                <p>Code Exmaple</p>
-                <code></code>
-            </div>
-        </section>
+                <p>This is the styleguide of my portfolio for debugging purpose. if you are a visitor, please navigate back using the header~ </p>
 
-        <section id="5" class="style-guide-box">
-            <h2>This</h2>
-            <h3>Example</h3>
-            <div></div>
-            <div class="code-example">
-                <p>Code Exmaple</p>
-                <code></code>
-            </div>
-        </section>
+            </section>
 
-        <section id="Citation" class="style-guide-box">
-            <h2>Citation</h2>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </section>
+            <section id="Ethos" class="style-guide-box">
+                <h1 class="title">Ethos</h1>
+                <p>The tone and voice should be confident and infomative. Not too profesisonal or casual, but a blend of two. The visual style should be modern, simple and organized, flexible and adoptive. The emotion should overall welcoming and relaxed. The keyword is subtle and elegant.</p>
+                <div></div>
+
+            </section>
+
+            <section id="Typography" class="style-guide-box">
+                <h1 class="title">Typography</h1>
+
+                <div>
+                    <h2>Font: Satoshi</h2>
+                    <h4>Variants: Satoshi Variable(Variable font)
+                        * Satoshi Variable Italic(Variable font)<br>
+                        * Satoshi Light
+                        * Satoshi Light Italic<br>
+                        * Satoshi Regular
+                        * Satoshi Italic<br>
+                        * Satoshi Medium
+                        * Satoshi Medium Italic<br>
+                        * Satoshi Bold
+                        * Satoshi Bold Italic<br>
+                        * Satoshi Black
+                        * Satoshi Black Italic<br>
+                    </h4>
+                </div>
+
+                <div>
+                    <h1>Heading 1 Title</h1>
+                    <h2>Heading 2 Subtitle</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <p>Paragraph</p>
+                    <span>span</span>
+                </div>
+                <div class="code-example">
+                    <h3>Code Exmaple</h3>
+                    <code>
+                        &lt;h1&gt;Title&lt;/h1&gt;<br>
+                        &lt;h2&gt;Subtitle&lt;/h2&gt;<br>
+                        &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+                        &lt;h4&gt;Heading 4&lt;/h4&gt;<br>
+                        &lt;h5&gt;Heading 5&lt;/h5&gt;<br>
+                        &lt;p&gt;Paragraph&lt;/p&gt;<br>
+                        &lt;span&gt;span&lt;/span&gt;<br>
+                    </code>
+                </div>
+            </section>
+
+            <section id="Color" class="style-guide-box">
+                <h1 class="title">Color</h1>
+                <h3>Black and White. </h3>
+                <div>
+                    <div class="style-guide-box" style="background-color:white;">
+
+                    </div>
+                    <div class="style-guide-box" style="background-color:black;">
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="Interactive Elements" class="style-guide-box">
+                <h1 class="title">Interactive Elements</h1>
+
+                <h3>Cursor Blob</h3>
+                <div id="blob-demo"></div>
+                <h3>CSS Selector</h3>
+                <p> #blob</p>
+                <h3>Code Exmaple</h3>
+                <p>&lt;div id="blob"&gt;&lt;/div&gt;</p>
+
+                <div class="seperator"></div>
+
+                <h3>Navigation link</h3>
+                <a href="#" class="nav-link navlink-underline-animation">About</a>
+                <h3>CSS Selector</h3>
+                <p> .nav-link + .navlink-underline-animation</p>
+
+                <h3>Code Exmaple</h3>
+                <p>&lt;a href="#" class="nav-link navlink-underline-animation"&gt;About&lt;/a&gt;</p>
+
+                <div class="seperator"></div>
+
+                <h3>Cases - Interaction Hover</h3>
+
+                <div class="cases">
+                    <div class="cases-content">
+                        <h3>A Beautiful Clock</h3>
+                        <span>#3D Modeling CAD</span>
+                    </div>
+                    <div class="cases-right">
+                        <img src="imgs/Beautiful%20Clock%20Gif.gif" alt="Gif showing the beautiful colck turning">
+                    </div>
+                </div>
+
+                <h3>CSS Selector</h3>
+                <p> .cases > .cases-content+.case-right</p>
+                <h3>Code Exmaple</h3>
+                <p> &lt;div class="cases"&gt;
+                    &lt;div class="cases-content"&gt;
+                    &lt;h3&gt;A Beautiful Clock&lt;/h3&gt;
+                    &lt;span&gt;#3D Modeling CAD&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class="cases-right"&gt;
+                    &lt;img src="imgs/Beautiful%20Clock%20Gif.gif" alt="Gif showing the beautiful colck turning"&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;</p>
 
 
+            </section>
+
+
+            <section id="5" class="style-guide-box">
+                <h1 class="title">Combined Element</h1>
+                <h3>Header</h3>
+                <div class="seperator"></div>
+
+                <div class="header-container">
+                    <a class="title" href="#">Tim Chen</a>
+                    <nav class="navigation">
+                        <a href="#" class="nav-link navlink-underline-animation">About</a>
+                    </nav>
+                </div>
+                <div class="seperator"></div>
+
+                <div class="code-example">
+                    <p>Code Exmaple</p>
+                    &lt;div class="header-container"&gt;
+                    &lt;a class="title" href="#"&gt;Tim Chen&lt;/a&gt;
+                    &lt;nav class="navigation"&gt;
+                    &lt;a href="#" class="nav-link navlink-underline-animation"&gt;About&lt;/a&gt;
+                    &lt;/nav&gt;
+                    &lt;/div&gt;
+
+                </div>
+
+                <div class="seperator"></div>
+                <h3>Footer</h3>
+                <div class="seperator"></div>
+
+                <div>
+                    <footer>
+                        <h3 class="footer-text">Oh hi, didn't see you there. I was just ...</h3>
+                        <div class="footer-top">
+                            <div class="scroll-wrap">
+
+                                <div class="scroll">
+
+                                    <span>Pixel Pushing</span> <span>-</span>
+                                    <span>Sketching</span> <span>-</span>
+                                    <span>Daydreaming</span><span>-</span>
+                                    <span>Inspirations Discovering</span><span>-</span>
+                                    <span>Project Grinding</span><span>-</span>
+                                    <span>Reading</span><span>-</span>
+                                    <span>Designing</span><span>-</span>
+                                    <span>Million-Dollar-Idea Sketching</span><span> -</span>
+                                    <span>Coffee Brewing</span><span>-</span>
+                                    <span>Product Researching</span><span> - </span>
+                                    <span>DIY-ing</span><span> - </span>
+                                    <span>Baking</span><span> - </span>
+
+                                    <span>Pixel Pushing</span> <span>-</span>
+                                    <span>Sketching</span> <span>-</span>
+                                    <span>Daydreaming</span><span>-</span>
+                                    <span>Inspirations Discovering</span><span>-</span>
+                                    <span>Project Grinding</span><span>-</span>
+                                    <span>Reading</span><span>-</span>
+                                    <span>Designing</span><span>-</span>
+                                    <span>Million-Dollar-Idea Sketching</span><span> -</span>
+                                    <span>Coffee Brewing</span><span>-</span>
+                                    <span>Product Researching</span><span> - </span>
+                                    <span>DIY-ing</span><span> - </span>
+                                    <span>Baking</span><span> - </span>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="footer-info">
+                                <span>@2023, Updated 2023/4/10,</span>
+                                <a class="jump-link" href="https://github.com/TimChenCSY/Portfolio">Built by Me. </a>
+
+                            </div>
+                            <div>
+                                <a class="jump-link" href="index.html">StyleGuide</a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                <div>
+                    &lt;footer&gt;
+                    &lt;h3 class="footer-text"&gt;Oh hi, didn't see you there. I was just ...&lt;/h3&gt;
+                    &lt;div class="footer-top"&gt;
+
+
+                    &lt;div class="scroll-wrap"&gt;
+
+                    &lt;div class="scroll"&gt;
+
+                    &lt;span&gt;Pixel Pushing&lt;/span&gt; &lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Sketching&lt;/span&gt; &lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Daydreaming&lt;/span&gt;&lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Inspirations Discovering&lt;/span&gt;&lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Project Grinding&lt;/span&gt;&lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Reading&lt;/span&gt;&lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Designing&lt;/span&gt;&lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Million-Dollar-Idea Sketching&lt;/span&gt;&lt;span&gt; -&lt;/span&gt;
+                    &lt;span&gt;Coffee Brewing&lt;/span&gt;&lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Product Researching&lt;/span&gt;&lt;span&gt; - &lt;/span&gt;
+                    &lt;span&gt;DIY-ing&lt;/span&gt;&lt;span&gt; - &lt;/span&gt;
+                    &lt;span&gt;Baking&lt;/span&gt;&lt;span&gt; - &lt;/span&gt;
+
+                    &lt;span&gt;Pixel Pushing&lt;/span&gt; &lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Sketching&lt;/span&gt; &lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Daydreaming&lt;/span&gt;&lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Inspirations Discovering&lt;/span&gt;&lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Project Grinding&lt;/span&gt;&lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Reading&lt;/span&gt;&lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Designing&lt;/span&gt;&lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Million-Dollar-Idea Sketching&lt;/span&gt;&lt;span&gt; -&lt;/span&gt;
+                    &lt;span&gt;Coffee Brewing&lt;/span&gt;&lt;span&gt;-&lt;/span&gt;
+                    &lt;span&gt;Product Researching&lt;/span&gt;&lt;span&gt; - &lt;/span&gt;
+                    &lt;span&gt;DIY-ing&lt;/span&gt;&lt;span&gt; - &lt;/span&gt;
+                    &lt;span&gt;Baking&lt;/span&gt;&lt;span&gt; - &lt;/span&gt;
+
+
+
+                    &lt;/div&gt;
+
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="footer-bottom"&gt;
+                    &lt;div class="footer-info"&gt;
+                    &lt;span&gt;@2023, Updated 2023/4/10,&lt;/span&gt;
+                    &lt;a class="jump-link" href="https://github.com/TimChenCSY/Portfolio"&gt;Built by Me. &lt;/a&gt;
+
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                    &lt;a class="jump-link" href="index.html"&gt;StyleGuide&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;/footer&gt;
+
+                </div>
+
+            </section>
+
+            <section id="Citation" class="style-guide-box">
+                <h1 class="title">Citation</h1>
+                <ul>
+                    <li>Portfolio Inspiration from:</li>
+                    <ul>
+                        <li>https://by-erwinhines.com/</li>
+                        <li>https://geletina.com/#contact</li>
+                        <li>https://druh.in/</li>
+                        <li>https://maelanlemeur.com/</li>
+                    </ul>
+                    <li>Stop scroll bar https://blog.hubspot.com/website/hide-scrollbar-css</li>
+                    <li>Blob cursor inspired from https://www.youtube.com/watch?v=PWabkdTkS_0</li>
+                    <li>Setting Fontface:</li>
+                    <ul>
+                        <li>https://stackoverflow.com/questions/69267704/how-to-import-at-woff2-font-and-use-it-in-a-sass-setting</li>
+                        <li>https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face</li>
+                    </ul>
+                    <li>Hover underline animation: https://www.30secondsofcode.org/css/s/hover-underline-animation/</li>
+                    <li>Page load fade in animation: https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/</li>
+                    <li>Normalize from: normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css </li>
+                </ul>
+
+            </section>
+
+        </div>
 
     </main>
+
+
+    <footer>
+        <h3 class="footer-text">Oh hi, didn't see you there. I was just ...</h3>
+        <div class="footer-top">
+
+
+            <div class="scroll-wrap">
+
+                <div class="scroll">
+
+                    <span>Pixel Pushing</span> <span>-</span>
+                    <span>Sketching</span> <span>-</span>
+                    <span>Daydreaming</span><span>-</span>
+                    <span>Inspirations Discovering</span><span>-</span>
+                    <span>Project Grinding</span><span>-</span>
+                    <span>Reading</span><span>-</span>
+                    <span>Designing</span><span>-</span>
+                    <span>Million-Dollar-Idea Sketching</span><span> -</span>
+                    <span>Coffee Brewing</span><span>-</span>
+                    <span>Product Researching</span><span> - </span>
+                    <span>DIY-ing</span><span> - </span>
+                    <span>Baking</span><span> - </span>
+
+                    <span>Pixel Pushing</span> <span>-</span>
+                    <span>Sketching</span> <span>-</span>
+                    <span>Daydreaming</span><span>-</span>
+                    <span>Inspirations Discovering</span><span>-</span>
+                    <span>Project Grinding</span><span>-</span>
+                    <span>Reading</span><span>-</span>
+                    <span>Designing</span><span>-</span>
+                    <span>Million-Dollar-Idea Sketching</span><span> -</span>
+                    <span>Coffee Brewing</span><span>-</span>
+                    <span>Product Researching</span><span> - </span>
+                    <span>DIY-ing</span><span> - </span>
+                    <span>Baking</span><span> - </span>
+
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-info">
+                <span>@2023, Updated 2023/4/10,</span>
+                <a class="jump-link" href="https://github.com/TimChenCSY/Portfolio">Built by Me. </a>
+
+            </div>
+            <div>
+                <a class="jump-link" href="index.html">StyleGuide</a>
+            </div>
+        </div>
+    </footer>
 
 
 </body>
