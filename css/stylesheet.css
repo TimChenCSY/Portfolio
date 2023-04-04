@@ -456,7 +456,7 @@ right-column,
     animation-fill-mode: forwards;
     background-color: white;
     color: black;
-    
+
 }
 
 .cases:hover {
@@ -474,10 +474,10 @@ right-column,
     background-blend-mode: difference;
     padding-top: 1em;
     padding-bottom: 1em;
-     flex-direction:column;
+    flex-direction: column;
     transition-duration: 0.2s;
-   
-  
+
+
 
 }
 
@@ -665,7 +665,7 @@ h2 {
 .footer-text {
     margin-left: 0.5em;
     width: 100%;
-    font-family: 'Satoshi-light';
+    font-family: 'Satoshi-LightItalic';
 }
 
 .left-column-contact {
@@ -706,6 +706,10 @@ h2 {
 
 .left-column-Bodytext p {
     margin-bottom: 1em;
+}
+
+.bodytext p {
+    1em;
 }
 
 h3 {
@@ -759,4 +763,22 @@ a {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
+}
+
+.bodycontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    top: 10vh;
+    left: 0;
+    flex-wrap: wrap;
+
+
+
+}
+
+.style-guide-box {
+    border: 0.13em solid #1d1915;
+    min-width: 33%;
 }
