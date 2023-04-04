@@ -263,7 +263,7 @@ html {
 html {
     cursor: none;
     /*  background-color:#fff;*/
-    background-color: #f8f8f8;
+    background-color: white;
 }
 
 
@@ -300,7 +300,6 @@ header {
     justify-content: space-between;
     padding: 1.5rem;
 
-
     /*    overflow: hidden;*/
     height: 100%;
     width: 100%;
@@ -314,7 +313,7 @@ header {
     font-family: "Satoshi-Bold";
 
 
-    animation: moveInStartRightAnimation ease 0.5s 0.2s;
+    animation: moveInStartRightAnimation ease 0.5s 0.1s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
     margin-bottom: 0;
@@ -333,7 +332,7 @@ header {
     text-decoration: none;
     margin-left: 1.5rem;
 
-    animation: moveInStartRightAnimation ease 0.5s 0.7s;
+    animation: moveInStartRightAnimation ease 0.5s 0.4s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
 
@@ -452,11 +451,12 @@ right-column,
     border-bottom: 0.13em solid #1d1915;
     transition-duration: 0.5s;
     opacity: 0;
-    animation: fadeInRight ease-in 0.4s 0.4s;
+    animation: fadeInRight ease-in 0.4s 0.2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     background-color: white;
     color: black;
+    text-decoration: none;
 }
 
 .aboutcases {
@@ -508,6 +508,10 @@ right-column,
     width: 100%;
     flex-basis: 65%;
     height: 100%;
+    opacity: 0;
+    animation: fadeInHalfRight ease-in 0.2s 0.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .cases-content:hover a {
@@ -520,7 +524,7 @@ right-column,
     text-align: right;
 
     opacity: 0;
-    animation: fadeInHalfRight ease 0.4s 1.3s;
+    animation: fadeInHalfRight ease 0.4s 0.75s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -541,7 +545,7 @@ right-column,
 
 
     opacity: 0;
-    animation: moveInHalfStartTopAnimation ease 0.5s 0.5s;
+    animation: moveInHalfStartTopAnimation ease 0.6s 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
@@ -692,7 +696,7 @@ h2 {
     margin-right: auto;
     padding-top: 1em;
     opacity: 0;
-    animation: moveInHalfStartTopAnimation ease 0.4s 1s;
+    animation: moveInHalfStartTopAnimation ease 0.4s 0.6s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
@@ -702,7 +706,7 @@ h2 {
     font-size: 1.2em;
     margin: 0;
     opacity: 0;
-    animation: moveInHalfStartTopAnimation ease 0.5s 0.5s;
+    animation: moveInHalfStartTopAnimation ease 0.6s 0.4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
@@ -790,6 +794,8 @@ a {
 
 .bodycontent {
     display: flex;
+    border-left:  border: 0.13em solid #1d1915;
+    border-right:  border: 0.13em solid #1d1915;
     flex-direction: column;
     justify-content: center;
     align-self: center;
@@ -799,6 +805,8 @@ a {
     left: 10%;
     flex-wrap: nowrap;
     width: 80%;
+    
+    
 
 
 
@@ -810,6 +818,11 @@ a {
     width: auto;
     height: auto;
     padding: 1em;
+    
+    animation:  fadeInHalfRight ease 0.4s 0.1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 }
 
 h4 {
