@@ -213,27 +213,26 @@ font-family: 'Satoshi-BlackItalic';
 html {
     cursor: none;
 
-
 }
 
 /* Blob style */
 #blob {
-    position:fixed;
+    position: fixed;
     width: 2.5em;
     height: 2.5em;
-    color:white;
+    color: white;
     background-color: white;
     mix-blend-mode: difference;
     background-blend-mode: difference;
     border-radius: 50%;
     z-index: 200;
     pointer-events: none;
-  position:fixed;
+    position: fixed;
 }
 
 .blob-container {
-    position:fixed;
-    
+    position: fixed;
+
     top: 0;
     left: 0;
     z-index: 9999;
@@ -249,12 +248,14 @@ html {
 html {
     cursor: none;
     /*  background-color:#fff;*/
+    background-color: #f8f8f8;
 }
 
 
 main {
     height: 90vh;
-    position: static; 
+    position: static;
+
 
 }
 
@@ -270,7 +271,12 @@ header {
     z-index: 100;
     overflow: hidden;
     font-family: "Satoshi-Bold";
- 
+    
+    /*    page load fade in animation*/
+    /*    https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
+    animation: moveInStartRightAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .header-container {
@@ -291,6 +297,12 @@ header {
     color: #1d1915;
     text-decoration: none;
     font-family: "Satoshi-Bold";
+    
+   
+    animation: moveInStartRightAnimation ease 0.5s 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+
 }
 
 .navigation {
@@ -304,6 +316,11 @@ header {
     color: #1d1915;
     text-decoration: none;
     margin-left: 1.5rem;
+    
+    animation: moveInStartRightAnimation ease 0.5s 0.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+
 
 }
 
@@ -319,6 +336,8 @@ header {
     display: inline-block;
     position: relative;
     color: black;
+    
+    
 }
 
 .navlink-underline-animation::after {
@@ -345,15 +364,15 @@ header {
 /* body */
 body {
 
-    width:100vw;
+    width: 100vw;
     height: 100%;
-    background-color: #f8f8f8;
+    background-color: white;
     color: #1d1915;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
     flex: none;
-    
+
 
 
 
@@ -383,8 +402,14 @@ body {
     overflow: scroll;
     padding: 2em;
     border-right: 0.13em solid #1d1915;
-    border-bottom: 0.13em solid #1d1915;
+   
     background-color: white;
+    
+    
+    animation: moveInStartTopAnimation ease 0.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    
 
 }
 
@@ -393,13 +418,16 @@ body {
     height: 100%;
     overflow-x: hidden;
     border-bottom: 0.13em solid #1d1915;
-
+    
+    
 }
 
 right-column,
 ::-webkit-scrollbar {
     display: none;
     /* for Chrome, Safari, and Opera */
+
+
 }
 
 .cases {
@@ -408,6 +436,11 @@ right-column,
     align-items: center;
     border-bottom: 0.13em solid #1d1915;
     transition-duration: 0.5s;
+    
+    opacity:0;
+animation: fadeInRight ease-in 0.4s 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 
 
 }
@@ -432,12 +465,23 @@ right-column,
     padding: 1em;
     width: 65%;
     height: 100%;
+    
+    opacity:0;
+    
+     animation: fadeInRight ease 0.4s 0.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 
 .cases-right {
     width: 80%;
     text-align: right;
+    
+    opacity:0;
+     animation: fadeInHalfRight ease 0.4s 1.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .cases-right img {
@@ -450,7 +494,13 @@ right-column,
 .left-column-content {
     position: relative;
     margin-top: 5vh;
-
+    
+    
+    opacity:0;
+    animation: moveInHalfStartTopAnimation ease 0.5s 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
 }
 
 .right-column-content {
@@ -465,7 +515,10 @@ right-column,
     scrollbar-width: none;
     /* for Firefox */
     overflow-y: scroll;
- background-color: white;   
+    background-color: white;
+    
+   
+    
 }
 
 
@@ -492,8 +545,8 @@ footer {
     scrollbar-width: none;
     /* for Firefox */
     overflow-y: hidden;
-      
-    
+
+
 }
 
 .footer-top {
@@ -602,10 +655,22 @@ h2 {
 
     margin-top: auto;
     margin-right: auto;
+    
+     opacity:0;
+    animation: moveInHalfStartTopAnimation ease 0.4s 0.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 }
 
 .left-column-description {
     font-size: 1.2em;
+    
+    opacity:0;
+    animation: moveInHalfStartTopAnimation ease 0.5s 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
 }
 
 h3 {
