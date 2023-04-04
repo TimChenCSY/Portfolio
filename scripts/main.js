@@ -1,6 +1,8 @@
 'use strict';
 
-
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
 
 document.addEventListener("mousemove", function (event) {
     let blob = document.getElementById("blob");
