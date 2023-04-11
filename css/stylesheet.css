@@ -795,9 +795,7 @@ h1 {
     }
 
     .info-row {
-        flex-wrap: nowrap;
         font-size: 0.8em;
-        
     }
 
     .info-row span {
@@ -815,7 +813,7 @@ a {
     color: black;
 }
 
-.resume-download {
+.side-nav {
     width: 100%;
     height: 100%;
     padding: 0.5em;
@@ -880,6 +878,7 @@ ul {
 
 .info-sum {
     display: flex;
+    height: auto;
     flex-wrap: wrap;
     border-top: 0.1em solid #1d1915;
     border-bottom: 0.1em solid #1d1915;
@@ -888,6 +887,7 @@ ul {
     animation: fadeInAnimation ease 0.6s 0.75s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+   
 }
 
 .info-sum {
@@ -898,23 +898,30 @@ ul {
 }
 
 .info-row {
-    display: block;
+    display: flex;
+    flex:auto;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    
+    
     width: 100%;
-    height: auto;
+    height: 4em;
     padding-bottom: 0.3em;
     padding-top: 0.3em;
     border-bottom: 0.05em solid #1d1915;
+    
     opacity: 0;
     animation: fadeInHalfRight ease 0.4s 0.9s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    
 
 }
 
 .info-row span {
-    align-self: center;
     position: absolute;
     margin: auto;
+
     margin-left: 1em;
     font-size: 1.25em;
     left: 24%;
@@ -929,6 +936,9 @@ ul {
 .info-row h4 {
     display: inline;
     font-family: "Satoshi-Regular";
+    margin-bottom: 0;
+    height: 100%;
+    
     
     opacity: 0;
     animation: fadeInRight ease 0.4s 1.0s;
@@ -1013,4 +1023,22 @@ figcaption {
     animation: fadeInAnimation ease 0.4s 0.65s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+.page-end {
+    display: flex;
+    color: black;
+    background-color: white;
+    border-top: 0.13em solid #1d1915;
+    width:100%;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.page-end:hover{
+    color:white;
+    background-color: black;
+    padding:1em 0 1em 0; 
 }
