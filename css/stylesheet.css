@@ -228,6 +228,7 @@ html {
     border-radius: 50%;
     z-index: 200;
     pointer-events: none;
+    opacity: 0;
 
 }
 

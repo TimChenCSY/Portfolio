@@ -10,6 +10,7 @@ document.addEventListener("mousemove", function (event) {
     let y = event.clientY - (blob.clientHeight / 2);
     blob.style.left = x + "px";
     blob.style.top = y + "px";
+    blob.style.opacity = 1;
 });
 
 // Set the cursor to be in the center of the blob
@@ -19,4 +20,5 @@ document.addEventListener("mousemove", function (event) {
     blob.style.left = x + "px";
     blob.style.top = y + "px";
     blob.style.cursor = "none";
+    blob.style.opacity = 1;
 });
