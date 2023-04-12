@@ -387,10 +387,6 @@ body {
     display: flex;
     flex-direction: column;
     flex: none;
-
-
-
-
 }
 
 .content-container {
@@ -411,14 +407,12 @@ body {
     width: 50%;
     height: 100%;
     display: flex;
-    min-width: 29em;
     flex-direction: column;
     position: relative;
     overflow: scroll;
     padding: 2em;
     border-right: 0.13em solid #1d1915;
     background-color: white;
-
     animation: moveInStartTopAnimation ease 0.6s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -1063,7 +1057,7 @@ figcaption {
         width: 100%;
         max-width: 100%;
         max-height: auto;
-        
+
         box-sizing: content-box;
         margin-bottom: 1em;
         margin-left: 0;
@@ -1089,4 +1083,14 @@ figcaption {
         max-height: auto;
         height: 100%;
     }
-}
+
+    @media screen and (max-width: 450px) {
+        #blob {
+            opacity: 0;
+        }
+
+        .html {
+            cursor: auto;
+        }
+
+    }
