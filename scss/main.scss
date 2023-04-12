@@ -1,0 +1,903 @@
+/*Font from fontshare.com, CSS from fontshare files*/
+/**
+ * @license
+ *
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ * 漏 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Satoshi Variable(Variable font)
+ * Satoshi Variable Italic(Variable font)
+ * Satoshi Light
+ * Satoshi Light Italic
+ * Satoshi Regular
+ * Satoshi Italic
+ * Satoshi Medium
+ * Satoshi Medium Italic
+ * Satoshi Bold
+ * Satoshi Bold Italic
+ * Satoshi Black
+ * Satoshi Black Italic
+ *
+*/
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+@font-face {
+    font-family: 'Satoshi-Variable';
+    src: url('fonts/Satoshi-Variable.woff2') format('woff2'), url('fonts/Satoshi-Variable.woff') format('woff'), url('fonts/Satoshi-Variable.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+@font-face {
+    font-family: 'Satoshi-VariableItalic';
+    src: url('fonts/Satoshi-VariableItalic.woff2') format('woff2'), url('fonts/Satoshi-VariableItalic.woff') format('woff'), url('fonts/Satoshi-VariableItalic.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('fonts/Satoshi-Light.woff2') format('woff2'), url('fonts/Satoshi-Light.woff') format('woff'), url('fonts/Satoshi-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-LightItalic';
+    src: url('fonts/Satoshi-LightItalic.woff2') format('woff2'), url('fonts/Satoshi-LightItalic.woff') format('woff'), url('fonts/Satoshi-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('fonts/Satoshi-Regular.woff2') format('woff2'), url('fonts/Satoshi-Regular.woff') format('woff'), url('fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Italic';
+    src: url('fonts/Satoshi-Italic.woff2') format('woff2'), url('fonts/Satoshi-Italic.woff') format('woff'), url('fonts/Satoshi-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('fonts/Satoshi-Medium.woff2') format('woff2'), url('fonts/Satoshi-Medium.woff') format('woff'), url('fonts/Satoshi-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-MediumItalic';
+    src: url('fonts/Satoshi-MediumItalic.woff2') format('woff2'), url('fonts/Satoshi-MediumItalic.woff') format('woff'), url('fonts/Satoshi-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url('fonts/Satoshi-Bold.woff2') format('woff2'), url('fonts/Satoshi-Bold.woff') format('woff'), url('fonts/Satoshi-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-BoldItalic';
+    src: url('fonts/Satoshi-BoldItalic.woff2') format('woff2'), url('fonts/Satoshi-BoldItalic.woff') format('woff'), url('fonts/Satoshi-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url('fonts/Satoshi-Black.woff2') format('woff2'), url('fonts/Satoshi-Black.woff') format('woff'), url('fonts/Satoshi-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-BlackItalic';
+    src: url('fonts/Satoshi-BlackItalic.woff2') format('woff2'), url('fonts/Satoshi-BlackItalic.woff') format('woff'), url('fonts/Satoshi-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+/*
+font-family: 'Satoshi-Variable';
+font-family: 'Satoshi-VariableItalic';
+font-family: 'Satoshi-Light';
+font-family: 'Satoshi-LightItalic';
+font-family: 'Satoshi-Regular';
+font-family: 'Satoshi-Italic';
+font-family: 'Satoshi-Medium';
+font-family: 'Satoshi-MediumItalic';
+font-family: 'Satoshi-Bold';
+font-family: 'Satoshi-BoldItalic';
+font-family: 'Satoshi-Black';
+font-family: 'Satoshi-BlackItalic';
+```*/
+/*knowledge used in setting fontface*/
+/*https://stackoverflow.com/questions/69267704/how-to-import-at-woff2-font-and-use-it-in-a-sass-setting*/
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face*/
+/* General styles */
+/* Blob style */
+/* Cursor style */
+/* Header styles */
+/*Navlink animation from*/
+/*https://www.30secondsofcode.org/css/s/hover-underline-animation/*/
+/**/
+/* body */
+/*Footer*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+    font-family: "Satoshi-Regular";
+}
+
+html {
+    cursor: none;
+    cursor: none;
+    background-color: white;
+}
+
+#blob {
+    position: fixed;
+    width: 2.5em;
+    height: 2.5em;
+    color: white;
+    background-color: white;
+    mix-blend-mode: difference;
+    background-blend-mode: difference;
+    border-radius: 50%;
+    z-index: 200;
+    pointer-events: none;
+}
+
+#blob-demo {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    color: white;
+    background-color: white;
+    mix-blend-mode: difference;
+    background-blend-mode: difference;
+    border-radius: 50%;
+    z-index: 200;
+    pointer-events: none;
+}
+
+.blob-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    pointer-events: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    mix-blend-mode: difference;
+}
+
+main {
+    height: 90vh;
+    position: static;
+    height: auto;
+}
+
+header {
+    background-color: white;
+    border-bottom: 0.13rem solid #1d1915;
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    overflow: hidden;
+    font-family: "Satoshi-Bold";
+    animation: moveInStartRightAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    font-size: 3em;
+    color: #1d1915;
+    text-decoration: none;
+    font-family: "Satoshi-Bold";
+    animation: moveInStartRightAnimation ease 0.5s 0.1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    margin-bottom: 0;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: calc(0.8em + 1rem);
+    font-weight: normal;
+    color: #1d1915;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    animation: moveInStartRightAnimation ease 0.5s 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.navlink-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 0.1em;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover {
+        &::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+    color: #1d1915;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex: none;
+}
+
+.content-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 90vh;
+    border-bottom: 0.13em solid #1d1915;
+    flex-direction: row;
+    overflow: visible;
+    overflow-x: hidden;
+    top: 10vh;
+}
+
+.left-column {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    min-width: 29em;
+    flex-direction: column;
+    position: relative;
+    overflow: scroll;
+    padding: 2em;
+    border-right: 0.13em solid #1d1915;
+    background-color: white;
+    animation: moveInStartTopAnimation ease 0.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.case-column {
+    width: 70%;
+    height: 90vh;
+    left: 15%;
+    display: flex;
+    min-width: 29em;
+    flex-direction: column;
+    position: relative;
+    overflow: scroll;
+    padding: 2em;
+    border: 0.13em solid #1d1915;
+    border-top: none;
+    transition: ease all 0.6s;
+    background-color: white;
+    opacity: 0;
+    animation: moveInStartTopAnimation ease 0.5s 0.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.right-column {
+    width: 50%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+right-column {
+    display: none;
+}
+
+&::-webkit-scrollbar {
+    display: none;
+}
+
+.cases {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.13em solid #1d1915;
+    transition-duration: 0.5s;
+    opacity: 0;
+    animation: fadeInRight ease-in 0.4s 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        background-color: black;
+        color: white;
+        background-blend-mode: difference;
+        padding: 1em;
+        transition-duration: 0.2s;
+    }
+}
+
+.aboutcases {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.13em solid #1d1915;
+    transition-duration: 0.5s;
+    opacity: 0;
+    animation: fadeInRight ease-in 0.4s 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        background-color: black;
+        color: white;
+        background-blend-mode: difference;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        flex-direction: column;
+        transition-duration: 0.2s;
+    }
+}
+
+.cases-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1em;
+    width: 100%;
+    flex-basis: 65%;
+    height: 100%;
+    opacity: 0;
+    animation: fadeInHalfRight ease-in 0.2s 0.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-blend-mode: difference;
+
+    &:hover {
+        a {
+            color: white;
+        }
+    }
+}
+
+.cases-right {
+    width: 80%;
+    text-align: right;
+    opacity: 0;
+    animation: fadeInHalfRight ease 0.4s 0.75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-top: 0.25em;
+    }
+}
+
+.left-column-content {
+    position: relative;
+    margin-top: 5vh;
+    opacity: 0;
+    animation: moveInHalfStartTopAnimation ease 0.6s 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.right-column-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+footer {
+    background-color: #1d1915;
+    color: #eee8cd;
+    border-top: 0em solid #1d1915;
+    flex-direction: column;
+    align-items: center;
+    height: 4.5em;
+    width: 100%;
+    font-size: 1.5em;
+    overflow-x: hidden;
+    overflow-y: visible;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: hidden;
+}
+
+.footer-top {
+    display: flex;
+    width: 100%;
+    overflow: visible;
+}
+
+.scroll-wrap {
+    display: flex;
+    animation: rainbow 1s ease-in-out infinite;
+    animation: scroll 10s linear infinite;
+    white-space: nowrap;
+    background: linear-gradient(45deg, #f00, #f90, #ff0, #0f0, #0dd, #90f, #f0f, #f00, #f90, #ff0, #0f0, #0dd, #90f, #f0f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+.scroll {
+    span {
+        display: inline-block;
+        padding: 0 0.5em;
+        font-size: 1.5em;
+        font-family: 'Satoshi-BlackItalic';
+
+        &:hover {
+            color: #f39c12;
+            font-family: 'Satoshi-Black';
+        }
+    }
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    border-top: 1;
+    font-size: 0.6em;
+    line-height: 1.5em;
+}
+
+.footer-info {
+    span {
+        margin-bottom: 1em;
+        font-family: 'Satoshi-Medium';
+    }
+}
+
+.jump-link {
+    color: #eee8cd;
+    text-decoration: underline;
+    font-family: 'Satoshi-Medium';
+    margin-right: 0.5em;
+
+    &:hover {
+        color: #f39c12;
+        font-family: 'Satoshi-Black';
+    }
+}
+
+h2 {
+    font-size: 200%;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+}
+
+.footer-text {
+    margin-left: 0.5em;
+    width: 100%;
+    font-family: 'Satoshi-LightItalic';
+}
+
+.left-column-contact {
+    align-self: baseline;
+    position: relative;
+    margin-top: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    opacity: 0;
+    animation: moveInHalfStartTopAnimation ease 0.4s 0.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.left-column-description {
+    margin: 0;
+    opacity: 0;
+    animation: moveInHalfStartTopAnimation ease 0.6s 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.left-column-Bodytext {
+    font-size: 1em;
+    opacity: 0;
+    animation: fadeInText ease 0.5s 0.85s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin: 0;
+
+    p {
+        margin-bottom: 1em;
+    }
+}
+
+p {
+    margin: 1em;
+    font-size: 125%;
+}
+
+.seperator {
+    border-bottom: 0.1em solid #1d1915;
+    opacity: 0;
+    animation: fadeInHalfRight ease 0.4s 1.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+h3 {
+    font-family: "Satoshi-Light";
+    font-size: 125%;
+}
+
+h1 {
+    font-size: 230%;
+    margin-bottom: 2em;
+}
+
+.aboutp {
+    text-decoration: underline;
+}
+
+.about-title {
+    font-size: 2em;
+}
+
+a {
+    color: black;
+}
+
+.side-nav {
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+    font-family: "Satoshi-Light";
+    text-decoration: none;
+    font-size: 1.7em;
+    color: white;
+    position: static;
+    mix-blend-mode: difference;
+    opacity: 0;
+    animation: fadeInRight ease 0.4s 0.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.bodycontent {
+    display: flex;
+    border-left: 0.13em solid #1d1915;
+    border-right: 0.13em solid #1d1915;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    top: 0;
+    left: 10%;
+    flex-wrap: nowrap;
+    width: 80%;
+}
+
+.style-guide-box {
+    border: 0.13em solid #1d1915;
+    min-width: 33%;
+    width: auto;
+    height: auto;
+    padding: 1em;
+    animation: fadeInHalfRight ease 0.4s 0.1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+h4 {
+    font-family: "Satoshi-Light";
+    margin-left: 0.3em;
+    font-size: 125%;
+}
+
+ul {
+    margin-left: 1em;
+}
+
+.info-sum {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    border-top: 0.1em solid #1d1915;
+    border-bottom: 0.1em solid #1d1915;
+    opacity: 0;
+    animation: fadeInRight ease 0.2s 0.85s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    align-self: center;
+    margin: auto;
+    font-size: 1.25em;
+}
+
+.info-row {
+    display: flex;
+    flex: auto;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 4em;
+    padding-bottom: 0.3em;
+    padding-top: 0.3em;
+    border-bottom: 0.05em solid #1d1915;
+    opacity: 0;
+    animation: fadeInHalfRight ease 0.4s 0.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    span {
+        position: absolute;
+        margin: auto;
+        margin-left: 1em;
+        font-size: 1.25em;
+        left: 24%;
+        opacity: 0;
+        animation: fadeInHalfRight ease 0.4s 1.1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    h4 {
+        display: inline;
+        font-family: "Satoshi-Regular";
+        margin-bottom: 0;
+        height: 100%;
+        opacity: 0;
+        animation: fadeInRight ease 0.4s 1.0s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+}
+
+.case-column-content {
+    h2 {
+        margin: 1em 0 0.3em 0;
+    }
+
+    p {
+        margin: 0;
+        margin-left: 0em;
+    }
+
+    opacity: 0;
+    animation: moveInHalfStartTopAnimation ease 0s 0.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.case-fig {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 50vw;
+    height: auto;
+    margin: 1em auto 1em auto;
+    transition-duration: 0.5s;
+    opacity: 0;
+    animation: fadeInHalfRight ease 0.4s 1.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    img {
+        transition-duration: 0.5s;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 50vw;
+        height: auto;
+        border: 0.01em solid black;
+    }
+}
+
+.case-fig-long {
+    display: flex;
+    width: 100%;
+    max-width: 70vw;
+    height: auto;
+    border: 0.01em solid black;
+    margin: 1em auto 1em auto;
+    transition-duration: 0.5s;
+}
+
+.case-contentblock {
+    margin-bottom: 1em;
+    opacity: 0;
+    animation: fadeInHalfRight ease 0.4s 1.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    li {
+        font-size: 1.25em;
+        margin-bottom: 0.5em;
+    }
+}
+
+figcaption {
+    margin-bottom: 1em;
+}
+
+.case-title {
+    font-family: "Satoshi-Bold";
+    font-size: 3em;
+    opacity: 0;
+    animation: fadeInAnimation ease 0.4s 0.65s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.page-end {
+    display: flex;
+    position: relative;
+    color: black;
+    background-color: white;
+    border-top: 0.13em solid #1d1915;
+    width: 100%;
+    margin-top: 1em;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+        color: white;
+        background-color: black;
+        padding: 1em 0 1em 0;
+    }
+}
+
+.case-inactive {
+    &:hover {
+        color: black;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 60em) {
+    .left-column {
+        width: 100%;
+        border-bottom: 0.13rem solid #1d1915;
+    }
+
+    .case-column {
+        width: 100%;
+        left: 0;
+    }
+
+    .right-column {
+        width: 100%;
+    }
+
+    .info-row {
+        font-size: 0.8em;
+
+        span {
+            display: inline;
+        }
+    }
+
+    .info-sum {
+        flex-wrap: wrap;
+    }
+
+    .case-fig {
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        max-height: auto;
+        box-sizing: content-box;
+        margin-bottom: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        transition-duration: 0.3s;
+
+        img {
+            max-width: 100%;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            transition-duration: 0.3s;
+        }
+    }
+
+    .case-fig-long {
+        img {
+            max-width: 100%;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            max-height: auto;
+            height: 100%;
+        }
+    }
+}
