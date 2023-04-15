@@ -399,9 +399,7 @@ body {
     flex-direction: row;
     overflow: visible;
     overflow-x: hidden;
-    top: 10vh;
-
-
+    box-sizing: content-box;
 }
 
 .left-column {
@@ -1027,6 +1025,7 @@ figcaption {
     .left-column {
         width: 100%;
         border-bottom: 0.13rem solid #1d1915;
+
     }
 
     .case-column {
@@ -1093,5 +1092,15 @@ figcaption {
         .html {
             cursor: auto;
         }
+
+        .left-column {
+            height: 100%;
+            box-sizing: content-box;
+        }
+        .content-container{
+            height: 100%;
+        }
+        
+
 
     }
