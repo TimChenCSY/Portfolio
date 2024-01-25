@@ -207,6 +207,11 @@ font-family: 'Satoshi-BlackItalic';
     /*  font-family: "Grotezk", bold;*/
     font-family: "Satoshi-Regular";
 
+
+
+
+
+
 }
 
 
@@ -214,14 +219,14 @@ html {
     cursor: none;
 
 
+
 }
 
 /* Blob style */
 #blob {
     position: fixed;
-    width: 2.5em;
-    height: 2.5em;
-    color: white;
+    width: 2em;
+    height: 2em;
     background-color: white;
     mix-blend-mode: difference;
     background-blend-mode: difference;
@@ -268,11 +273,11 @@ html {
 }
 
 
-main {
-    height: 90vh;
-    position: static;
-    height: auto;
+main {}
 
+no-scroll {
+    overflow: hidden;
+    background-color: aquamarine;
 }
 
 /* Header styles */
@@ -381,20 +386,37 @@ header {
 body {
 
     width: 100vw;
-    height: 100%;
+
     background-color: white;
     color: #1d1915;
     font-family: sans-serif;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    flex: none;
+
 }
 
 .content-container {
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
     height: 90vh;
+
+    flex-wrap: wrap;
+
+    border-bottom: 0.13em solid #1d1915;
+    flex-direction: row;
+    overflow: visible;
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+
+.content-container-about {
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    flex-wrap: wrap;
+
     border-bottom: 0.13em solid #1d1915;
     flex-direction: row;
     overflow: visible;
@@ -404,14 +426,36 @@ body {
 
 .left-column {
     width: 50%;
-    height: 100%;
+    height: 90vh;
+
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow: scroll;
+    top: inherit;
+    overflow: visible;
     padding: 2em;
     border-right: 0.13em solid #1d1915;
-    background-color: white;
+
+
+    animation: moveInStartTopAnimation ease 0.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+.left-column-about {
+    width: 50%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: inherit;
+    overflow: visible;
+    padding: 2em;
+    border-right: 0.13em solid #1d1915;
+
+
     animation: moveInStartTopAnimation ease 0.6s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -420,13 +464,15 @@ body {
 
 .case-column {
     width: 70%;
-    height: 90vh;
     left: 15%;
     display: flex;
+    height: 100%;
 
     flex-direction: column;
     position: relative;
     overflow: scroll;
+
+
     padding: 2em;
     border: 0.13em solid #1d1915;
     border-top: none;
@@ -445,6 +491,9 @@ body {
     width: 50%;
     height: 100%;
     overflow-x: hidden;
+
+    overflow: scroll;
+
 
 
 }
@@ -590,15 +639,13 @@ footer {
 
     background-color: #1d1915;
     color: #eee8cd;
-    border-top: 0em solid #1d1915;
 
     flex-direction: column;
     align-items: center;
 
-    height: 4.5em;
-    width: 100%;
+    margin-top: auto;
+
     font-size: 1.5em;
-    /*  z-index: 101;*/
     overflow-x: hidden;
     overflow-y: visible;
 
@@ -608,6 +655,7 @@ footer {
     scrollbar-width: none;
     /* for Firefox */
     overflow-y: hidden;
+
 
 
 }
@@ -622,7 +670,7 @@ footer {
 
     display: flex;
     animation: rainbow 1s ease-in-out infinite;
-    animation: scroll 10s linear infinite;
+    animation: scroll 50s linear infinite;
 
     white-space: nowrap;
 
@@ -664,10 +712,10 @@ footer {
     border-top: 1;
     font-size: 0.6em;
     line-height: 1.5em;
-
+    background-color: black
 }
 
-.footer-info {}
+
 
 .footer-info span {
     margin-bottom: 1em;
@@ -735,6 +783,7 @@ h2 {
 
 .left-column-Bodytext p {
     margin-bottom: 1em;
+    margin-left: 0.85em;
 }
 
 p {
@@ -918,6 +967,7 @@ ul {
 .case-column-content p {
     margin: 0;
     margin-left: 0em;
+    padding-bottom: 0.5em;
 
 }
 
@@ -1020,10 +1070,18 @@ figcaption {
     background-color: white;
 }
 
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 78em) {
 
     .left-column {
         width: 100%;
+        height: 90vh;
+        border-bottom: 0.13rem solid #1d1915;
+
+    }
+
+    .left-column-about {
+        width: 100%;
+        height: 100%;
         border-bottom: 0.13rem solid #1d1915;
 
     }
@@ -1031,6 +1089,8 @@ figcaption {
     .case-column {
         width: 100%;
         left: 0;
+        border-left: 0.13em solid white;
+        border-right: 0.13em solid white;
     }
 
 
@@ -1098,16 +1158,28 @@ figcaption {
             box-sizing: content-box;
         }
 
+        .left-column-about {
+            height: 100%;
+            box-sizing: content-box;
+        }
+
         .content-container {
             height: 100%;
         }
 
 
 
+
     }
 
     .about-list {
-        left:20em;
+        left: 20em;
         border-bottom: 10em;
-        
+
+    }
+
+    .footer-info span {
+        color: antiquewhite;
+        padding-left: 1em;
+
     }
